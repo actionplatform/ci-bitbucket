@@ -1,0 +1,13 @@
+[project]
+name = "ci-bitbucket"
+type = "web"
+ci = "bitbucket"
+language = ""
+
+[source_host]
+kind = "github"
+repo = "actionplatform/ci-bitbucket"
+
+[release]
+strategy = "semver"
+changelog = "conventional"
