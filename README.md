@@ -14,3 +14,12 @@ The platform requires the checks `gitflow` and `conventional-commit` on pull req
 Variables Pipelines provides: `BITBUCKET_BRANCH`, `BITBUCKET_PR_DESTINATION_BRANCH`, `BITBUCKET_TAG`, `BITBUCKET_REPO_FULL_NAME`. Set `AP_DEFAULT_BRANCH` when the default branch is not `main`. Enable Pipelines once under Repository settings → Pipelines → Settings.
 
 Tag `vX.Y.Z`; `v1` floats to the latest.
+
+Images for the languages added with ci-scripts v0.4.0 (each runs setup and check in the `Test` workflow):
+
+| Language | Image |
+|----------|-------|
+| `csharp` | `mcr.microsoft.com/dotnet/sdk:9.0` |
+| `elixir` | `elixir:1.18` |
+| `swift` | `swift:6.0` (no curl; the templates install it when missing) |
+| `scala` | `sbtscala/scala-sbt:eclipse-temurin-17.0.13_11_1.10.5_3.5.2` |
